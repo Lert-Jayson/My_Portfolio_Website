@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(../images/adventures-of-tom/base.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    text-align: center; /* Center the image horizontally */
+}
+
+.header img {
+    max-width: 80%;
+    height: auto;
+}
+
+.container{
+    background: #d5d5d5;
+    width: 80vw;
+    padding: 2rem 9% 2rem;
+    border: 5px solid #000;
+    margin-top: 1rem;
+}
+.container h1{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+    margin-top: 20px; /* Add spacing from the heading */
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn-container {
+    text-align: right; /* Align only the button to the right */
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 1rem 1.5rem;
+    background: #f3963f;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    border-radius: 4rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color: black;
+    transition: all .2s ease;
+    
+}
+.btn:hover{
+    transform: scale(0.96);
+}
+
+
+
+.contents{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.content-left{
+    flex-basis: 60%;
+}
+.content-left p{
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+.content-left img{
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Set a fixed width for the images */
+    max-height: 100%;
+}
+
+.content-right{
+    flex-basis: 35%;
+}
+.content-right img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Set a fixed width for the images */
+    max-height: 100%; /* Maintain aspect ratio */
+}
+
+.tools{
+    padding: 1rem;
+    /* margin-top: rem; */
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 25px;
+}
+.tools h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tools ul li {
+    margin-bottom: 5px; /* Add margin between list items for spacing */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically align items in the center */
+}
+.tools ul li p {
+    margin-bottom: 5px;
+}
+
+
+.tools ul li img {
+    max-width: 40px; /* Set a maximum width for the images */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+    margin-right: 10px; /* Add margin to separate the image from the text */
+}
+
+/* _______________________________________ */
+.content-2 {
+    text-align: center; /* Center align the content */
+    display: none;
+}
+
+.content-2 h1 {
+    font-size: 24px; /* Adjust the header font size as needed */
+    padding: 20px 0; /* Add padding for spacing */
+    border-bottom: 1px solid #ccc; /* Add a bottom border for header effect */
+    margin-bottom: 20px; /* Add margin below the header */
+    margin-top: 20px;
+}
+.content-2 p{
+    margin-bottom: 15px;
+}
+
+.cont-2-container {
+    text-align: left; /* Left-align content within containers */
+    max-width: 800px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add a border for a container effect */
+    margin-bottom: 20px; /* Add margin between containers */
+}
+
+.cont-2-container img {
+    max-width: 100%; /* Make images responsive while retaining their aspect ratio */
+    height: auto; /* Automatically adjust height */
+}
+
+.cont-2-container ol {
+    margin-top: 10px;
+    list-style-type: decimal; /* Use decimal numbers for ordered list */
+    padding-left: 20px; /* Add padding to align list items with text */
+    margin-bottom: 20px; /* Add margin below the ordered list */
+}
+
+.cont-2-container ol li {
+    margin-bottom: 10px; /* Add margin between list items */
+}
+
+
+
+.seemore{
+    text-align: center;
+    padding: 25px;
+}
+
+
+
+/* .message-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.gif-container img{
+    width: 35vw;
+} */
+.message-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top of the container */
+    gap: 20px; /* Adjust the gap between the image and message */
+    padding: 20px; /* Add padding to the container for spacing */
+}
+
+.gif-container img {
+    width: 25vw;
+}
+
+.message {
+    text-align: justify;
+    font-size: 1.2rem;
+    position: relative; /* Set the message container as a reference for pseudo-element positioning */
+    padding: 15px; /* Add padding to the message container */
+    background-color: #0074D9; /* Background color of the speech bubble */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 70%; /* Adjust the maximum width as needed */
+}
+
+.message::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -18px; /* Adjust the left position to control the tail */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #0074D9 transparent transparent; /* Match the bubble's background color */
+}
+
+/* 
+___________________________________________ */
+/* Apply styles to the team container */
+.team {
+    display: none;
+    padding: 20px; /* Add padding for spacing */
+    border: 2px solid #333; /* Add a border with a dark color */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Add a light background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-bottom: 20px; /* Add margin to separate multiple team sections */
+}
+
+/* Style the headings */
+.team{
+    margin-top: 25px;
+}
+.team h1 {
+    font-size: 24px; /* Increase the font size */
+    color: #333; /* Change text color */
+    margin-bottom: 20px;
+}
+
+/* Style the team member items */
+.team ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.team li {
+    margin-bottom: 20px; /* Add margin between team members */
+}
+
+/* Style the team member names */
+.team h2 {
+    font-size: 20px; /* Increase the font size */
+    color: #555; /* Change text color */
+}
+
+/* Style the roles and descriptions */
+.team ul li {
+    font-size: 16px; /* Set font size for roles and descriptions */
+    color: #777; /* Change text color */
+    margin-bottom: 5px;
+}
+
+/* Highlight the roles with a different color */
+.team ul li strong {
+    color: #333; /* Change the text color for role labels */
+}
+
+
+/* ______________________________________________________ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 9%;
+}
+.footer-text p {
+    font-size: 1.5rem;
+}
+.footer-text p span{
+    background-color: #d5d5d5;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/* _________________BREAKPOINTS_____________________________ */
+
+@media (max-width: 1200px){
+    html {
+        font-size: 85%;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        padding: 1rem 5% 1.5rem;
+        width: 90%;
+    }
+    .container h1{
+        font-size: 1.5rem;
+     }
+    .contents{
+        flex-direction: column;
+    }
+    .content-left,
+    .content-right{
+        flex: initial;
+        width: 100%;
+    } 
+    .content-right{
+        margin-top: 25px;
+    }
+    .team h2{
+        font-size: 75%;
+    }
+    .team ul li {
+        font-size: 75%;
+    }
+}
+@media (max-width: 617px){
+     .container h1{
+        font-size: 1.3rem;
+     }
+     .message-container{
+        padding: 5px;
+    }
+    .message{
+        text-align: left;
+    }
+}
+@media (max-width: 450px){
+    html {
+        font-size: 55%;
+    }
+    .container h1{
+        font-size: 1.2rem;
+     }
+}
+@media (max-width: 365px){
+    .footer-text p{
+        font-size: 10px;
+    }
+}
+
